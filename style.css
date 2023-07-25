@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --white-bg: rgba(255, 255, 255);
+    --white-accent-bg: rgb(250, 250, 250);
+    --black-color-1: rgb(0, 0, 0);
+    --black-color-2: rgb(116, 116, 116);
+    --black-color-3: rgb(37, 37, 37);
+    --black-bg: rgb(0, 0, 0);
+    --black-accent-bg: rgb(20, 20, 20);
+    --white-color-1: rgb(255, 255, 255);
+    --white-color-2: rgb(209, 209, 209);
+    --white-color-3: rgb(148, 148, 148);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1rem;
+    background-color: var(--white-bg);
+    color: var(--black-color-1);
+    overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #00000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #b1b1b18f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b1b1b1b6;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #b1b1b152;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+a {
+    color: var(--black-color-1);
+    transition: all .2s;
+}
+
+a:hover {
+    color: var(--black-color-2);
+}
+
+a:focus {
+    color: var(--black-color-3);
+}
+
+.link {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: inline-block;
+}
+
+.link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
+}
+
+.link:focus {
+    background-color: rgba(0, 0, 0, 0.15);
+    text-decoration: underline;
+}
+
+img {
+    border-radius: 10px;
+}
+
+#main {
+    margin-left: 360px;
+    padding: 20px;
+    padding-left: clamp(20px, 200px, 200px);
+    padding-right: clamp(20px, 200px, 200px);
+    transition: all .5s;
+    z-index: 2;
+}
+
+#sidebar {
+    box-sizing: border-box;
+    height: 100%;
+    width: 340px;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.116);
+    padding: 20px;
+    background-color: var(--white-accent-bg);
+    transition: all .3s;
+    overflow: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+#toc {
+    margin-bottom: 10px;
+}
+
+.sidebar-link {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #00000000 !important;
+}
+
+.sidebar-link:hover {
+    background-color: #00000000 !important;
+}
+
+.sidebar-link:focus {
+    background-color: #00000000 !important;
+}
+
+.sidebar-logo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.sidebar-sublink {
+    text-indent: 30px;
+}
+
+.toc-li {
+    margin-left: -20px;
+}
+
+.divider {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 1px solid var(--black-bg);
+}
+
+.align-center {
+    text-align: center;
+}
+
+.menu-btn {
+    margin: 20px;
+    outline: solid 0px var(--black-color-1);
+}
+
+.back-btn {
+    margin-top: 20px;
+    margin-left: 360px;
+}
+
+.fixed-top-btn {
+    position: fixed;
+    text-decoration: none;
+    color: var(--black-color-1);
+    transition: all .2s;
+    z-index: 10000;
+    background-color: #00000000;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    width: 18px;
+    height: 22px;
+    display: flex;
+    place-content: center;
+}
+
+.fa-bars {
+    display: block !important;
+}
+
+.menu-btn:hover {
+    color: var(--black-color-2);
+}
+
+.menu-btn:focus {
+    color: var(--black-color-3);
+    outline: solid 2px var(--black-color-2);
+}
+
+.menu-btn:active {
+    outline: solid 1px var(--black-color-3);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-element {
+    margin: 30px;
+}
+
+.banner-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    margin-left: 300px;
+    transition: all .5s;
+}
+
+.banner-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 0;
+    background-attachment: fixed;
+    box-shadow: inset 0 -20px 10px -10px #00000075;
+    object-fit: cover;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white-color-1);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    flex: 1 0 290px;
+    background-color: var(--white-accent-bg);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 17px #00000033;
+    bottom: 0;
+    transition: all .3s;
+}
+
+.card:hover {
+    bottom: 4px;
+}
+
+.card-person {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-img {
+    width: calc(100% + 40px);
+    height: 300px;
+    object-fit: cover;
+    margin: -20px;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.link-card {
+    width: 100%;
+    height: 100%;
+    margin: -20px;
+    position: absolute;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.link-card:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card > a {
+    text-decoration: none;
+}
+
+.highlight {
+    background-color: rgba(255, 255, 0, 0.3);
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+}
+
+.highlight > * {
+    margin: 15px;
+}
+
+#img-main {
+    background-image: url(https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/GettyImages-577674005_492115_zfpgiw.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+}
+
+#img-school {
+    background-image: url(https://smpia25.al-azhar.sch.id/wp-content/uploads/2022/09/slide-SMPIA_25-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+}
+
+#img-supplies {
+    background-image: url(/assets/images/schoolsupplies.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+li>a {
+    text-decoration: none;
+}
+
+li>a:hover {
+    text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--black-bg);
+        color: var(--white-color-1);
+    }
+
+    #sidebar {
+        background-color: var(--black-accent-bg);
+    }
+
+    .sidebar-link link {
+        color: var(--white-color-1);
+    }
+
+    .sidebar-link link:hover {
+        color: var(--white-color-2);
+    }
+
+    .sidebar-link link:focus {
+        color: var(--white-color-3);
+    }
+
+    .fixed-top-btn {
+        color: var(--white-color-1);
+    }
+
+    .fixed-top-btn:hover {
+        color: var(--white-color-2);
+    }
+
+    .fixed-top-btn:focus {
+        color: var(--white-color-3);
+    }
+
+    .divider {
+        border: 1px solid var(--white-bg);
+    }
+
+    a {
+        color: var(--white-color-1);
+    }
+
+    a:hover {
+        color: var(--white-color-2);
+    }
+
+    a:focus {
+        color: var(--white-color-3);
+    }
+
+    .card {
+        background-color: var(--black-accent-bg);
+    }
+
+    .menu-btn {
+        outline: solid 0px var(--white-color-1);
+    }
+
+    .menu-btn:focus {
+        outline: solid 3px var(--white-color-3);
+    }
+
+    .menu-btn:active {
+        outline: solid 2px var(--white-color-2);
+    }
+
+    .link {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .link:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .link:focus {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+}
+
+@media(max-width: 700px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    #main {
+        padding: 20px;
+        margin-left: 0;
+    }
+
+    #banner {
+        margin-left: 0;
+    }
+
+    #sidebar {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .back-btn {
+        margin-left: 70px;
+    }
+
+    .highlight {
+        flex-direction: column;
+    }
+}
