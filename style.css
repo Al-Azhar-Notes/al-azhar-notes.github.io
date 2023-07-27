@@ -72,7 +72,32 @@ a:focus {
     color: var(--black-color-3);
 }
 
+img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+td,
+th {
+    border: 1px solid #e4e4e4;
+    padding: 8px;
+    margin: 0;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #e4e4e4;
+}
+
+table {
+    border-collapse: collapse;
+}
+
 .link {
+    padding-left: 5px;
+    padding-right: 5px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.05);
     display: inline-block;
@@ -107,7 +132,7 @@ img {
     width: 340px;
     position: fixed;
     z-index: 9999;
-    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.116);
+    box-shadow: 7px 0px 10px rgba(0, 0, 0, 0.06);
     padding: 20px;
     background-color: var(--white-accent-bg);
     transition: all .3s;
@@ -177,7 +202,6 @@ img {
     color: var(--black-color-1);
     transition: all .2s;
     z-index: 10000;
-    background-color: #00000000;
     padding: 10px;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -186,6 +210,7 @@ img {
     height: 22px;
     display: flex;
     place-content: center;
+    background-color: #FFFFFFAA;
 }
 
 .fa-bars {
@@ -214,6 +239,19 @@ img {
     align-items: center;
 }
 
+.flex-center {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.subtitle {
+    opacity: 0.8;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 .flex-element {
     margin: 30px;
 }
@@ -234,12 +272,14 @@ img {
     background-repeat: no-repeat !important;
     border-radius: 0;
     background-attachment: fixed;
-    box-shadow: inset 0 -20px 10px -10px #00000075;
+    box-shadow: inset 0 -15px 10px -10px rgba(0, 0, 0, 0.2);
     object-fit: cover;
+    right: 0;
 }
 
 .banner-text {
     position: absolute;
+    z-index: 3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -280,6 +320,7 @@ img {
 
 .card-img {
     width: calc(100% + 40px);
+    max-width: 200% !important;
     height: 300px;
     object-fit: cover;
     margin: -20px;
@@ -291,8 +332,9 @@ img {
 .link-card {
     width: 100%;
     height: 100%;
-    margin: -20px;
     position: absolute;
+    top: 0;
+    left: 0;
     text-decoration: none;
     border-radius: 10px;
 }
@@ -301,7 +343,7 @@ img {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.card > a {
+.card>a {
     text-decoration: none;
 }
 
@@ -316,8 +358,53 @@ img {
     place-items: center;
 }
 
-.highlight > * {
+.highlight>* {
     margin: 15px;
+}
+
+span.frac {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+span.frac>sup,
+span.frac>sub {
+    display: block;
+    font-size: small;
+    padding: 0 0.3em;
+}
+
+span.frac>sup {
+    border-bottom: 0.08em solid;
+    padding: 0.3em;
+}
+
+span.frac>span {
+    display: none;
+}
+
+sup>.frac {
+    vertical-align: super;
+    font-size: small;
+}
+
+sup>sup {
+    font-size: smaller;
+}
+
+#img-alazhar {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/ad/Masjid_Agung_Al-Azhar_2021.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gradient-bg {
+    position: inherit;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 #img-main {
@@ -372,6 +459,7 @@ li>a:hover {
 
     .fixed-top-btn {
         color: var(--white-color-1);
+        background-color: #00000022;
     }
 
     .fixed-top-btn:hover {
@@ -404,6 +492,7 @@ li>a:hover {
 
     .menu-btn {
         outline: solid 0px var(--white-color-1);
+        background-color: #00000022;
     }
 
     .menu-btn:focus {
@@ -417,11 +506,11 @@ li>a:hover {
     .link {
         background-color: rgba(255, 255, 255, 0.1);
     }
-    
+
     .link:hover {
         background-color: rgba(255, 255, 255, 0.2);
     }
-    
+
     .link:focus {
         background-color: rgba(255, 255, 255, 0.15);
     }
@@ -452,5 +541,9 @@ li>a:hover {
 
     .highlight {
         flex-direction: column;
+    }
+
+    img {
+        max-width: 100% !important;
     }
 }
