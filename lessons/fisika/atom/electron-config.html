@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    
+
 
     <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i
             class="fa-solid fa-bars"></i></a>
@@ -104,29 +104,103 @@
                 <img src="/assets/images/atoms/oxygen.svg" alt="" style="max-width: 300px;">
             </div>
             <p class="subtitle">an atom figure with shell labels (Oxygen)</p>
-            <h2 id="electron-config-based-on-shell--max">Maximum Electron</h2>
+            <h2 id="electron-config-based-on-shell--max">Electron Count Rules</h2>
             <table>
                 <tr>
-                 <td colspan="2">&nbsp;</td>
-                 <td>&nbsp;</td>
+                    <th rowspan="2">Shell K</th>
+                    <td>Write <strong>2</strong> if <strong>electron</strong> &GreaterEqual; <strong>2</strong></td>
                 </tr>
                 <tr>
-                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
+                    <td>Write <strong>1</strong> if <strong>electron</strong> &lt; <strong>2</strong> <i>(only for Hydrogen)</i></td>
+                </tr>
+                
+                <tr>
+                    <th rowspan="2">Shell L</th>
+                    <td>Write <strong>8</strong> if <strong>electron</strong> &GreaterEqual; <strong>8</strong></td>
                 </tr>
                 <tr>
-                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
-                 <td>&nbsp;</td>
+                    <td>Write <strong>leftover electrons</strong> if <strong>electron</strong> &lt; <strong>8</strong></td>
                 </tr>
-               </table>
+                <tr>
+                
+                <tr>
+                    <th rowspan="3">Shell M</th>
+                    <td>Write <strong>18</strong> if <strong>electron</strong> &GreaterEqual; <strong>18</strong></td>
+                </tr>
+                <tr>
+                    <td>Write <strong>8</strong> if <strong>8</strong> &GreaterEqual; <strong>electron</strong> &lt; <strong>18</strong></td>
+                </tr>
+                <tr>
+                    <td>Write <strong>leftover electrons</strong> if <strong>electron</strong> &lt; <strong>8</strong></td>
+                </tr>
+                
+                <tr>
+                    <th rowspan="4">Shell N</th>
+                    <td>Write <strong>32</strong> if <strong>electron</strong> &GreaterEqual; <strong>32</strong></td>
+                </tr>
+                <tr>
+                    <td>Write <strong>18</strong> if <strong>18</strong> &GreaterEqual; <strong>electron</strong> &lt; <strong>32</strong></td>
+                </tr>
+                <tr>
+                    <td>Write <strong>8</strong> if <strong>8</strong> &GreaterEqual; <strong>electron</strong> &lt; <strong>18</strong></td>
+                </tr>
+                <tr>
+                    <td>Write <strong>leftover electrons</strong> if <strong>electron</strong> &lt; <strong>8</strong></td>
+                </tr>
+            </table>
             <h2 id="electron-config-based-on-shell--example">How to Determine Electron Count</h2>
             <ol>
-                <li>Coming soon!</li>
+                <li>Follow the rules</li>
+                <li>If the electrons (aka atomic number) = 0, you're done.</li>
             </ol>
             <h2 id="electron-config-based-on-shell--examples">Examples</h2>
-            
+            <table style="font-size: x-large;">
+                <tr>
+                    <th rowspan="2"><img src="/assets/images/atoms/oxygen_symbol.svg" alt="" style="max-width: 230px !important;"></th>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">K</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">L</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">M</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">N</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">2</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">4</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;"></td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;"></td>
+                </tr>
+            </table>
+            <br>
+            <table style="font-size: x-large;">
+                <tr>
+                    <th rowspan="2"><img src="/assets/images/atoms/magnesium_symbol.svg" alt="" style="max-width: 230px !important;"></th>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">K</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">L</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">M</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">N</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">2</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">8</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">2</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;"></td>
+                </tr>
+            </table>
+            <br>
+            <table style="font-size: x-large;">
+                <tr>
+                    <th rowspan="2"><img src="/assets/images/atoms/lead_symbol.svg" alt="" style="max-width: 230px !important;"></th>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">K</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">L</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">M</td>
+                    <th style="padding-left: 2ch; padding-right: 2ch;">N</td>
+                </tr>
+                <tr>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">2</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">8</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">18</td>
+                    <td style="padding-left: 2ch; padding-right: 2ch;">5</td>
+                </tr>
+            </table>
         </section>
     </div>
 
