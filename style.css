@@ -119,12 +119,18 @@ img {
 
 #main {
     margin-left: 360px;
-    padding: 20px;
-    padding-bottom: 3rem;
-    padding-left: clamp(20px, 200px, 200px);
-    padding-right: clamp(20px, 200px, 200px);
+    padding: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
     transition: all .5s;
     z-index: 2;
+    display: flex;
+    place-content: center;
+    box-sizing: border-box;
+}
+
+#main > section {
+    width: 100%;
 }
 
 #sidebar {
@@ -299,7 +305,7 @@ img {
 
 .card {
     position: relative;
-    flex: 1 0 290px;
+    flex: 1 0 320px;
     background-color: var(--white-accent-bg);
     border-radius: 10px;
     box-sizing: border-box;
@@ -555,8 +561,10 @@ li>a:hover {
     }
 
     #main {
-        padding: 20px;
         margin-left: 0;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 30px;
     }
 
     #banner {
