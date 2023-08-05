@@ -14,21 +14,30 @@
     <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+    <div class="fixed-top-btn-container" id="topbtn">
+        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+        <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+    </div>
     <div id="console"></div>
     <div id="sidebar">
-        <a href="/index.html">
-            <img src="/assets/images/master.png" alt="" class="sidebar-logo">
-        </a>
-        <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
-        <hr class="divider">
-        <a href="/about/author.html" class="sidebar-link link">About the Author</a>
-        <a href="/about/school.html" class="sidebar-link link">About School</a>
-        <a href="/lessons" class="sidebar-link link">Lessons</a>
-        
-        <hr class="divider">
-        <div id="toc">
-            <h4>Table of Contents</h4>
+        <div style="height: 560px; overflow: hidden;">
+            <a href="/index.html">
+                <img src="/assets/images/master.png" alt="" class="sidebar-logo">
+            </a>
+
+            <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
+        </div>
+
+        <div>
+            <a href="/about/author.html" class="sidebar-link link">About the Author</a>
+            <a href="/about/school.html" class="sidebar-link link">About School</a>
+            <a href="/lessons" class="sidebar-link link">Lessons</a>
+
+
+            <hr class="divider">
+            <div id="toc">
+                <h4>Table of Contents</h4>
+            </div>
         </div>
     </div>
 

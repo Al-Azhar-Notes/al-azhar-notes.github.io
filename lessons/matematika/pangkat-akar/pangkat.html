@@ -16,29 +16,44 @@
 </head>
 
 <body>
-    <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i
-            class="fa-solid fa-bars"></i></a>
-    <a href="../" class="fixed-top-btn back-btn" id="backbtn"><i class="fa-solid fa-chevron-left"></i></a>
+    <div class="fixed-top-btn-container" id="topbtn">
+        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+        <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+    </div>
     <div id="console"></div>
     <div id="sidebar">
-        <a href="/index.html">
-            <img src="/assets/images/master.png" alt="" class="sidebar-logo">
-        </a>
-        <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
-        <hr class="divider">
-        <a href="/about/author.html" class="sidebar-link link">About the Author</a>
-        <a href="/about/school.html" class="sidebar-link link">About School</a>
-        <a href="/lessons" class="sidebar-link link">Lessons</a>
+        <div style="height: 560px; overflow: hidden;">
+            <a href="/index.html">
+                <img src="/assets/images/master.png" alt="" class="sidebar-logo">
+            </a>
 
-        <hr class="divider">
-        <div id="toc">
-            <h4>Table of Contents</h4>
+            <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
+        </div>
+
+        <div>
+            <a href="/about/author.html" class="sidebar-link link">About the Author</a>
+            <a href="/about/school.html" class="sidebar-link link">About School</a>
+            <a href="/lessons" class="sidebar-link link">Lessons</a>
+
+
+            <hr class="divider">
+            <div id="toc">
+                <h4>Table of Contents</h4>
+            </div>
         </div>
     </div>
 
     <div class="banner-container" id="banner">
         <div class="banner-bg" id="img-supplies"></div>
-        <h1 class="banner-text" id="banner-txt">Bentuk Pangkat dan Akar: Exponent</h1>
+        <div class="gradient-bg"></div>
+        <div class="banner-text-container">
+            <h1 class="banner-text" id="banner-txt">Exponents</h1>
+            <h3 class="banner-text" id="banner-txt">Chapter 1</h3>
+        </div>
+    </div>
+
+    <div class="chip-container">
+        <div class="chip"><span>✅ Verified</span></div>
     </div>
 
     <div id="main">

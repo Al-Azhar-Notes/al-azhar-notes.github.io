@@ -7,8 +7,8 @@ function toggleNav() {
             document.getElementById("main").style.marginLeft = "360px";
 
             try {
-                document.getElementById("banner").style.marginLeft = "300px";
-                document.getElementById("backbtn").style.marginLeft = "360px";
+                document.getElementById("banner").style.marginLeft = "375px";
+                document.getElementById("topbtn").style.left = "385px";
             }
             catch {
                 
@@ -23,8 +23,8 @@ function toggleNav() {
         document.getElementById("sidebar").style.opacity = "0";
         
         try {
-            document.getElementById("banner").style.marginLeft = "0";
-            document.getElementById("backbtn").style.marginLeft = "70px";
+            document.getElementById("banner").style.marginLeft = "20px";
+            document.getElementById("topbtn").style.left = "30px";
         }
         catch {
             

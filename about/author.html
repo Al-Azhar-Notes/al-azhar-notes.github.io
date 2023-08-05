@@ -7,24 +7,36 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="icon" href="/assets/images/master.png">
     <title>About Author • Al Azhar 9th Grade Lesson Notes</title>     
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+    <div class="fixed-top-btn-container" id="topbtn">
+        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+        <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+    </div>
     <div id="console"></div>
     <div id="sidebar">
-        <a href="/index.html">
-            <img src="/assets/images/master.png" alt="" class="sidebar-logo">
-        </a>
-        <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
-        <hr class="divider">
-        <a href="/about/author.html" class="sidebar-link link">About the Author</a>
-        <a href="/about/school.html" class="sidebar-link link">About School</a>
-        <a href="/lessons" class="sidebar-link link">Lessons</a>
-        
-        <hr class="divider">
-        <div id="toc">
-            <h4>Table of Contents</h4>
+        <div style="height: 560px; overflow: hidden;">
+            <a href="/index.html">
+                <img src="/assets/images/master.png" alt="" class="sidebar-logo">
+            </a>
+
+            <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
+        </div>
+
+        <div>
+            <a href="/about/author.html" class="sidebar-link link">About the Author</a>
+            <a href="/about/school.html" class="sidebar-link link">About School</a>
+            <a href="/lessons" class="sidebar-link link">Lessons</a>
+
+
+            <hr class="divider">
+            <div id="toc">
+                <h4>Table of Contents</h4>
+            </div>
         </div>
     </div>
     
@@ -44,7 +56,7 @@
                 <h1 id="contact">Contact and Socials</h1>
                 <ul>
                     <li><i class="fa-solid fa-globe"></i> <a href="https://altaf-creator.github.io" class="link"></i>altaf-creator.github.io</a></li>
-                    <li><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/athaalaa.altaf9" class="link"></i>@athaalaa.altaf9</a></li>
+                    <li><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/altafcreator" class="link"></i>@altafcreator</a></li>
                     <li><i class="fa-brands fa-youtube"></i> <a href="https://youtube.com/@altafcreator" class="link"></i>altaf-creator</a></li>
                     <li><i class="fa-brands fa-github"></i> <a href="https://github.com/@altafcreator" class="link"></i>altaf-creator</a></li>
                     <li><i class="fa-solid fa-envelope"></i> <a href="mailto:athaalaaaltafhafidz@gmail.com" class="link"></i>For School: athaalaaaltafhafidz@gmail.com</a></li>
