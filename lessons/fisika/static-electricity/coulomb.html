@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/assets/images/master.png">
+    <title>Al Azhar 9th Grade Lesson Notes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="fixed-top-btn-container" id="topbtn">
+        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+        <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+    </div>
+    <div id="console"></div>
+    <div id="sidebar">
+        <div>
+            <a href="/index.html">
+                <img src="/assets/images/master.png" alt="" class="sidebar-logo">
+            </a>
+
+            <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
+        </div>
+
+        <div>
+            <a href="/about/author.html" class="sidebar-link link">About the Author</a>
+            <a href="/about/school.html" class="sidebar-link link">About School</a>
+            <a href="/lessons" class="sidebar-link link">Lessons</a>
+
+
+            <hr class="divider">
+            <div id="toc">
+                <h4>Table of Contents</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-container" id="banner">
+        <div class="banner-bg" id="img-supplies"></div>
+        <div class="gradient-bg"></div>
+        <div class="banner-text-container">
+            <h1 class="banner-text" id="banner-txt">Coulomb's Law</h1>
+            <h3 class="banner-text" id="banner-txt">Chapter 2</h3>
+        </div>
+    </div>
+    
+    <div class="chip-container" id="chip-container">
+        <div class="chip"><span>❓ Unchecked by Professionals</span></div>
+    </div>
+    
+    <div id="main">
+        <section>
+            <h1 id="definition">Definition</h1>
+            <p><b>Coulomb's law is a law that explains the releationship between 2 or more electrical charges.</b></p>
+            <p>This law states that: "The magnitude, or absolute value, of the attractive or repulsive electrostatic force between two point charges is directly proportional to the product of the magnitudes of their charges and inversely proportional to the squared distance between them."<sup>[<a href="#reference-1" class="link-compact">1</a>]</sup></p>
+            <h1 id="formula">Formula</h1>
+            <span>F = k <span class="frac"><sup>Q<sub>1</sub> &times; Q<sub>2</sub></sup><span>&frasl;</span><sub>r<sup>2</sup></span></span>
+            <p>
+                where,<br>
+                <ul>
+                    <li><b>F</b> = Force (Newton)</li>
+                    <li><b>r</b> = Distance (Metres)</li>
+                    <li><b>Q<sub>1</sub></b> = Charge 1 (Coulomb)</li>
+                    <li><b>Q<sup>2</sup></b> = Charge 2 (Coulomb)</li>
+                    <li><b>K</b> = Constant = <strong>9 &times; 10<sup>9</sup></strong> <span style="color: gray; font-size: 1rem;">Nm<sup>2</sup> / C<sup>2</sup></span></li>
+                </ul>
+            </p>
+            <h1 id="units">Unit Conversions (for Coulomb)</h1>
+            <ol>
+                <li>n <b>mC</b> (<strong>milli</strong>Coulomb) = n * 10<sup>-3</sup> C</li>
+                <li>n <b>MC</b> (<strong>Micro</strong>Coulomb) = n * 10<sup>-6</sup> C</li>
+                <li>n <b>nC</b> (<strong>nano</strong>Coulomb) = n * 10<sup>-9</sup> C</li>
+                <li>n <b>Å</b> (<strong>Ångström</strong>) = n * 10<sup>10</sup> C</li>
+            </ol>
+            <h1 id="example">Example</h1>
+            <img src="/assets/images/atoms/coulomb1.svg" alt=""><br>
+                <h2>Given:</h2>
+                <p>
+                    <strong>r</strong> = 30 cm = 0,3 m = <b>3 &times; 10<sup>-1</sup> m</b><br>
+                    <strong>Q<sub>1</sub></strong> = 2 MC = <b>2 &times; 10<sup>-6</sup></b><br>
+                    <strong>Q<sub>2</sub></strong> = 3 MC = <b>3 &times; 10<sup>-6</sup></b><br>
+                </p>
+                <h2>Solution:</h2>
+                <p>
+                    <span>F = k <span class="frac"><sup>Q<sub>1</sub> &times; Q<sub>2</sub></sup><span>&frasl;</span><sub>r<sup>2</sup></span></span><br>
+                    
+                    <span>F = 9 &times; 10<sup>9</sup><span class="frac"><sup>2 &times; 10<sup>-6</sup> &#8231; 3 &times; 10<sup>-6</sup></sup><span>&frasl;</span><sub>(3 &times; 10<sup>-1</sup>)<sup>2</sup></span></span> = <span class="frac"><sup>9 &times; 10<sup>9</sup> &#8231; 2 &times; 10<sup>-6</sup> &#8231; 3 &times; 10<sup>-6</sup></sup><span>&frasl;</span><sub>9 &times; 10<sup>-2</sup></span></span><br>
+                    
+                    = <span class="frac"><sup>10<sup>9</sup> &#8231; 2 &times; 10<sup>-6</sup> &#8231; 3 &times; 10<sup>-6</sup></sup><span>&frasl;</span><sub>10<sup>-2</sup></span></span> = <span class="frac"><sup>10<sup>-3</sup> &times; 6</sup><span>&frasl;</span><sub>10<sup>-2</sup></span></span><br>
+
+                    = <strong>6 &times; 10<sup>-1</sup></strong>
+                </p>
+            <h1 id="references">References</h1>
+            <ol>
+                <li id="reference-1">Coulomb, 1785. <i><a href="https://books.google.co.id/books?id=by5EAAAAcAAJ&pg=PA578" class="link">"Second mémoire sur l'électricité et le magnétisme"</a></i></li>
+            </ol>
+        </section>
+    </div>
+
+    <script src="/scripts/toc.js"></script>
+    <script src="/scripts/sidebar.js"></script>
+</body>
+
+</html>

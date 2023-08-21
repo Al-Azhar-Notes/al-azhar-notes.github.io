@@ -9,9 +9,14 @@ function toggleNav() {
             try {
                 document.getElementById("banner").style.marginLeft = "375px";
                 document.getElementById("topbtn").style.left = "385px";
-            }
-            catch {
+            } catch {
                 
+            }
+
+            try {
+                document.getElementById("chip-container").style.marginLeft = "375px";
+            } catch {
+
             }
         }
         
@@ -25,9 +30,14 @@ function toggleNav() {
         try {
             document.getElementById("banner").style.marginLeft = "20px";
             document.getElementById("topbtn").style.left = "30px";
-        }
-        catch {
+        } catch {
             
+        }
+
+        try {
+            document.getElementById("chip-container").style.marginLeft = "20px";
+        } catch {
+
         }
     }
 }

@@ -85,7 +85,7 @@ img {
 
 td,
 th {
-    border: 1px solid var(--white-color-2);
+    border: 1px solid var(--white-accent-bg);
     padding: 8px;
     margin: 0;
 }
@@ -94,11 +94,13 @@ th {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: var(--white-accent-bg);
+    background-color: rgba(209, 209, 209, .3);
+    color: black;
 }
 
 table {
     border-collapse: collapse;
+    border-radius: 15px;
 }
 
 .link {
@@ -116,6 +118,22 @@ table {
 
 .link:focus {
     background-color: rgba(0, 0, 0, 0.15);
+    text-decoration: underline;
+}
+
+.link-compact {
+    text-decoration: none;
+    color: rgb(53, 123, 228);
+    display: inline-block;
+}
+
+.link-compact:hover {
+    color: rgb(105, 163, 248);
+    text-decoration: underline;
+}
+
+.link-compact:focus {
+    color: rgb(83, 120, 240);
     text-decoration: underline;
 }
 
@@ -154,6 +172,12 @@ img {
     z-index: 9999;
     opacity: 1;
     transition: all .2s;
+}
+
+#sidebar > div:first-child {
+    overflow: hidden;
+    height: auto;
+    flex-shrink: 0;
 }
 
 #sidebar > div {
@@ -397,10 +421,10 @@ h3.banner-text {
 .chip-container {
     margin-top: 20px;
     margin-left: 375px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 15px;
+    transition: all .5s;
 }
 
 .chip {
@@ -456,6 +480,7 @@ span.frac {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
+    font-size: 1.1rem;
 }
 
 span.frac>sup,
