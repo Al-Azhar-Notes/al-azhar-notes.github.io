@@ -13,11 +13,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.css"
+        integrity="sha384-pRsDYiLLocCzWnUN/YEr9TBTTaZOUi5x8adKfqi6Qt44lDaFkoP++x1j2ohSMtdf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.js"
+        integrity="sha384-tMzugJpfLv7v0f+KXzNMqNCC6sVzLMM3sCnZDgzy0lcO/0h3sAkEBg/URFcV0JpE"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="fixed-top-btn-container" id="topbtn">
-        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i
+                class="fa-solid fa-bars"></i></a>
         <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
     </div>
     <div id="console"></div>
@@ -47,18 +53,220 @@
         <div class="banner-bg" id="img-supplies"></div>
         <div class="gradient-bg"></div>
         <div class="banner-text-container">
-            <h1 class="banner-text" id="banner-txt">Root</h1>
-            <h3 class="banner-text" id="banner-txt">Chapter 1</h3>
+            <h1 class="banner-text" id="banner-txt">Quadratic Equation: The Introduction</h1>
+            <h3 class="banner-text" id="banner-txt">Chapter 2</h3>
         </div>
     </div>
-    
+
     <div class="chip-container" id="chip-container">
-        <div class="chip"><span>❓ Unchecked by Professionals</span></div>
+        <div class="chip" title="Beware of mistakes. Please report to me (Altaf) if you caught a mistake here."><span>❓ Unchecked by Professionals</span></div>
     </div>
-    
+
     <div id="main">
         <section>
-            
+            <h1 id="introduction">Introduction</h1>
+            In algebra, a quadratic equation is any equation that can be rearranged in standard form as where x
+            represents an unknown value, and a, b, and c represent known numbers, where a ≠ 0.<sup>[<a
+                    href="#reference-1" class="link-compact">1</a>]</sup>
+            <h2 id="introduction--formula">Formula / Format</h2>
+            <span class="math-font">ax<sup>2</sup> + bx + c = 0</span>
+            <p>
+                <span class="math-font">a, b, c</span> = known numbers, where a &NotEqual; 0 <br>
+                <span class="math-font">x</span> = the unknown, or the root
+            </p>
+            <h2 id="introduction--exercise">Exercises</h2>
+            <h3>Finding the roots with factorisation.</h3>
+            <ol>
+                <li>
+                    <span id="q1.1.1"></span>
+                    <p>
+                        <hr>
+                        <span>To find the answer, we need to find the factors of b and c.</span><br>
+                        <span>The suitable factor for the equation are <b>2 and -3</b>.</span><br>
+                        <span>Then, insert each numbers to this formula: <span id="q1.1.2"></span>, where <span
+                                class="math-font">y</span> is the factor.</span><br><br>
+                        <span id="q1.1.3"></span><br><span id="q1.1.31"></span><br>
+                        <hr>
+                        <strong>So, the answer is <span id="q1.1.4"></span></strong>
+                    </p>
+                    <script defer>
+                        var element1 = document.getElementById("q1.1.1");
+                        var element2 = document.getElementById("q1.1.2");
+                        var element3 = document.getElementById("q1.1.3");
+                        var element31 = document.getElementById("q1.1.31");
+                        var element4 = document.getElementById("q1.1.4");
+
+                        katex.render(String.raw`x^2 - 1x - 6 = 0`, element1, {
+                            throwOnError: false
+                        });
+                        katex.render(String.raw`x + y`, element2, {
+                            throwOnError: false
+                        });
+                        katex.render(String.raw`
+                        \begin{aligned}
+                            x + 2 &= 0\\
+                            x &= -2\\
+                        \end{aligned}
+                        `, element3, {
+                            throwOnError: true
+                        }); katex.render(String.raw`
+                        \begin{aligned}
+                            x - 3 &= 0\\
+                            x &= 3
+                        \end{aligned}
+                        `, element31, {
+                            throwOnError: true
+                        });
+                        katex.render(String.raw`x = \{-2, 3\}`, element4, {
+                            throwOnError: false
+                        });
+                    </script>
+                </li>
+                <li>
+                    <p>
+                        <span id="q1.2.1"></span><br>
+                        <span><strong>Factors:</strong> <span class="math-font">2, 4</span></span><br>
+                        <hr>
+                        <span id="q1.2.2"></span><br>
+                        <span id="q1.2.3"></span><br>
+                        <hr>
+                        <span id="q1.2.4"></span><br>
+                    </p>
+                    <script defer>
+                        var element1 = document.getElementById("q1.2.1");
+                        var element2 = document.getElementById("q1.2.2");
+                        var element3 = document.getElementById("q1.2.3");
+                        var element4 = document.getElementById("q1.2.4");
+
+                        katex.render(String.raw`x^2 + 6x + 8 = 0`, element1, {
+                            throwOnError: false
+                        });
+                        katex.render(String.raw`
+                        \begin{aligned}
+                            x + 2 &= 0\\
+                            x &= -2\\
+                        \end{aligned}
+                        `, element2, {
+                            throwOnError: true
+                        }); katex.render(String.raw`
+                        \begin{aligned}
+                            x + 4 &= 0\\
+                            x &= 4
+                        \end{aligned}
+                        `, element3, {
+                            throwOnError: true
+                        });
+                        katex.render(String.raw`x = \{-2, -4\}`, element4, {
+                            throwOnError: false
+                        });
+                    </script>
+                </li>
+            </ol>
+            <h1 id="relation-algebra">Relation between Quadratic Equation and Algebraic Expressions</h1>
+            <p>This is an algebraic expression &rightarrow; <span id="m0"></span>. You can turn that into a quadratic equation.</p>
+            <span id="m1"></span>
+            <script>
+                const m0 = document.getElementById("m0");
+                const m1 = document.getElementById("m1");
+
+                katex.render(String.raw`(x + 5)(x + 7)`, m0, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`
+                \begin{aligned}
+                (x + 5)(x + 7) &= x^2 + 5x + 7x + 35&\\
+                &= x^2 + 12x + 35&\larr\textnormal{quadratic equation 😱😱}
+                \end{aligned}
+                `, m1, {
+                    throwOnError: true
+                });
+            </script>
+            <h1 id="all-about-roots">Quadratic Equation's Root Operations</h1>
+            <h2 id="finding-qe">Finding Quadratic Equation with Roots</h2>
+            <p>You can use the formula below to find a Quadratic Equation with 2 roots.</p>
+            <span id="m2"></span><span>, where <span class=math-font>x<sub>1, 2</sub></span> are the roots.</span><br>
+            <p>
+                <strong>Example:</strong><br><br>
+                <span id="m3"></span>
+            </p>
+            <script>
+                const m2 = document.getElementById("m2");
+                const m3 = document.getElementById("m3");
+
+                katex.render(String.raw`(x - x_1)(x - x_2) = 0`, m2, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`
+                \begin{aligned}
+                (x - x_1)(x - x_2) &= 0\\
+                (x - (-3))(x - 4) &= 0\\
+                (x + 3))(x - 4) &= 0\\
+                x^2 - 4x + 3x - 12 &= 0\\
+                x^2 - x - 12 &= 0
+                \end{aligned}
+                `, m3, {
+                    throwOnError: true
+                });
+            </script>
+            <h2 id="operations">Quadratic Root's Mathematical Operations</h2>
+            <h3 id="operations--formulas">Formulas</h3>
+            <p id="m4"></p>
+            <p id="m5"></p>
+            <h3 id="operations--examples">Examples</h3>
+            <ol>
+                <li>
+                    <p>Diketahui persamaan kuadrat <span id="q1"></span>, memiliki akar-akar persamaan kuadrat <span class="math-font">x<sub>1</sub></span> dan <span class="math-font">x<sub>2</sub></span>. Jika <span class="math-font">x<sub>1</sub> < x<sub>2</sub></span>, maka tentukan:
+                        <ol type="a">
+                            <li><span class="math-font">x<sub>1</sub> + x<sub>2</sub></span></li>
+                            <li><span class="math-font">x<sub>1</sub> &times; x<sub>2</sub></span></li>
+                        </ol>
+                    </p>
+                    <hr>
+                    <ol type="a">
+                        <li><span id="a1"></span></li>
+                        <li><span id="a2"></span></li>
+                    </ol>
+                </li>
+            </ol>
+            <script>
+                const m4 = document.getElementById("m4");
+                const m5 = document.getElementById("m5");
+                const q1 = document.getElementById("q1");
+                const a1 = document.getElementById("a1");
+                const a2 = document.getElementById("a2");
+
+                katex.render(String.raw`x_1 + x_2 = \dfrac{-b}{a}`, m4, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`x_1 \times x_2 = \dfrac{c}{a}`, m5, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`2x^2 + 7x + 3 = 0`, q1, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`
+                \begin{aligned}
+                x_1 + x_2 &= \dfrac{-b}{a}\\
+                &= \dfrac{-7}{2}\\
+                \end{aligned}
+                `, a1, {
+                    throwOnError: true
+                });
+                katex.render(String.raw`
+                \begin{aligned}
+                x_1 \times x_2 &= \dfrac{c}{a}\\
+                &= \dfrac{3}{2}\\
+                \end{aligned}
+                `, a2, {
+                    throwOnError: true
+                });
+            </script>
+            <h1>References</h1>
+            <ol>
+                <li id="reference-1" tabindex="-1">Quadratic Equation - The English Wikipedia, <a
+                        href="https://en.wikipedia.org/wiki/Quadratic_equation"
+                        class="link">https://en.wikipedia.org/wiki/Quadratic_equation</a></li>
+                </li>
         </section>
     </div>
 

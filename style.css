@@ -103,6 +103,15 @@ table {
     border-radius: 15px;
 }
 
+li:focus {
+    background-color: rgba(103, 164, 255, 0.2);
+}
+
+.math-font {
+    font-family: KaTeX_Math;
+    font-size: larger;
+}
+
 .link {
     padding-left: 5px;
     padding-right: 5px;
@@ -230,7 +239,7 @@ img {
 .divider {
     margin-top: 25px;
     margin-bottom: 25px;
-    border: 1px solid var(--black-color-3);
+    border: 1px solid var(--white-accent-bg);
 }
 
 .align-center {
@@ -507,7 +516,7 @@ sup>sup {
     font-size: smaller;
 }
 
-.root::before {
+.sroot::before { /* i renamed this because of KaTeX. sroot stands for self-root */
     content: "√";
     margin-left: calc(-1ch - 5px + 1.5px);
     font-size: x-large;
@@ -515,7 +524,7 @@ sup>sup {
     display: inline-block;
 }
 
-.root {
+.sroot {
     display: inline-block;
     margin-top: 3px;
     margin-left: 1.15ch;
@@ -546,7 +555,7 @@ sup>sup {
 }
 
 #img-school {
-    background-image: url(https://smpia25.al-azhar.sch.id/wp-content/uploads/2022/09/slide-SMPIA_25-1.jpg);
+    background-image: url(/assets/images/hero/altaz.jpg);
     background-position: center;
     background-repeat: no-repeat;
     filter: brightness(80%);
