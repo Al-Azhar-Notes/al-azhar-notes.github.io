@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/assets/images/master.svg">
+    <title>Al Azhar 9th Grade Lesson Notes</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.css"
+        integrity="sha384-pRsDYiLLocCzWnUN/YEr9TBTTaZOUi5x8adKfqi6Qt44lDaFkoP++x1j2ohSMtdf" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.js"
+        integrity="sha384-tMzugJpfLv7v0f+KXzNMqNCC6sVzLMM3sCnZDgzy0lcO/0h3sAkEBg/URFcV0JpE"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="fixed-top-btn-container" id="topbtn">
+        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i
+                class="fa-solid fa-bars"></i></a>
+        <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+    </div>
+    <div id="console"></div>
+    <div id="sidebar">
+        <div>
+            <a href="/index.html">
+                <img src="/assets/images/master.svg" alt="" class="sidebar-logo">
+            </a>
+
+            <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
+        </div>
+
+        <div>
+            <a href="/about/author.html" class="sidebar-link link">About the Author</a>
+            <a href="/about/school.html" class="sidebar-link link">About School</a>
+            <a href="/lessons" class="sidebar-link link">Lessons</a>
+
+
+            <hr class="divider">
+            <div id="toc">
+                <h4>Table of Contents</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner-container" id="banner">
+        <div class="banner-bg" id="img-supplies"></div>
+        <div class="gradient-bg"></div>
+        <div class="banner-text-container">
+            <h1 class="banner-text" id="banner-txt">Quadratic Equation: Finding the suitable factor</h1>
+            <h3 class="banner-text" id="banner-txt">Chapter 2 sub-page</h3>
+        </div>
+    </div>
+
+    <div class="chip-container" id="chip-container">
+        <div class="chip" title="Beware of mistakes. Please report to me (Altaf) if you caught a mistake here."><span>❓ Unchecked by Professionals</span></div>
+    </div>
+
+    <div id="main">
+        <section>
+            <p><strong><a href="/lessons/matematika/quadratic-equation/" class="link">&LeftArrow; Go back to Main Lesson</a></strong></p>
+            Firstly, lets use this equation. <br>
+            <span id="m1"></span><br>
+            <h1 id="steps">Step-by-step</h1>
+            <ol>
+                <li>Find the factors of <span class="math-font">c</span>, which in this equation, <span class="math-font">c = </span><span class="math-font-main">30</span>.</li>
+                <li>The factors of 30 are:
+                    <ul>
+                        <li>1, 30</li>
+                        <li>2, 15</li>
+                        <li>3, 10</li>
+                        <li>5, 6</li>
+                    </ul>
+                </li>
+                <li>Lets define that the first and second factors are <span class="math-font">y<sub>1, 2</sub></span>. To find the suitable factors for the equation, you need to check if;
+                    <ul>
+                        <li><span id="m2"></span>, and</li>
+                        <li><span id="m3"></span></li>
+                    </ul>
+                </li>
+                <li>Check for each of the factors. We end up with 5 and 6. <br> <span id="m4"></span></li>
+                <li>So, the answer is <strong><span class="math-font-main">5 & 6</span></strong></li>
+            </ol>
+            <p><strong><a href="/lessons/matematika/quadratic-equation/" class="link">&LeftArrow; Go back to Main Lesson</a></strong></p>
+            <script defer>
+                var element1 = document.getElementById("m1");
+                var element2 = document.getElementById("m2");
+                var element3 = document.getElementById("m3");
+                var element4 = document.getElementById("m4");
+
+                katex.render(String.raw`x^2 + 11x + 30 = 0`, element1, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`y_1 + y_2 = b`, element2, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`y_1 \times y_2 = c`, element3, {
+                    throwOnError: false
+                });
+                katex.render(String.raw`5 \times 6 = 30\\5 + 6 = 11`, element4, {
+                    throwOnError: false
+                });
+            </script>
+        </section>
+    </div>
+
+    <script src="/scripts/toc.js"></script>
+    <script src="/scripts/sidebar.js"></script>
+</body>
+
+</html>

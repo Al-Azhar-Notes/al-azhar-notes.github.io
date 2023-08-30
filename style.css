@@ -112,6 +112,11 @@ li:focus {
     font-size: larger;
 }
 
+.math-font-main {
+    font-family: KaTeX_Main;
+    font-size: larger;
+}
+
 .link {
     padding-left: 5px;
     padding-right: 5px;
@@ -220,7 +225,7 @@ img {
 }
 
 .sidebar-logo {
-    width: 150px;
+    width: 180px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -293,6 +298,7 @@ img {
 
 .circle {
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .flex {
