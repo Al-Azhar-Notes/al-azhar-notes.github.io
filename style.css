@@ -642,4 +642,8 @@ li>a:hover {
     .top-chips-container {
         flex-direction: column;
     }
+
+    #chip-container {
+        margin-left: 20px;
+    }
 }
