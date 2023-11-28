@@ -399,6 +399,13 @@ h3.banner-text {
     flex-direction: column;
 }
 
+.emoji-icon {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
 .card:hover {
     bottom: 4px;
 }
