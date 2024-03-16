@@ -1,0 +1,495 @@
+{ "subjects": [
+	{
+	    "id": 0,
+	    "titleEn": "Mathematics",
+	    "titleId": "Matematika",
+	    "splash": "1 + 1 = 3",
+	    "banner": "/assets/images/hero/math.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "Exponents and Roots",
+		    "titleId": "Bentuk Pangkat dan Akar",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "Lesson 1: Exponent",
+			    "titleId": "Pelajaran 1: Pangkat",
+			    "grade": 9,
+			    "status": 1,
+			    "authors": [ "Athaalaa Altaf Hafidz", "Athaalaa Altaf Hafidz" ],
+			    "pathEn": "/lessons/matematika/1-exponents/1.md",
+			    "pathId": "/lessons/matematika/1-exponents/1-id.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "pathEn": "path/to/file.json",
+			    "pathId": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 1,
+	    "titleEn": "Physics",
+	    "titleId": "Fisika",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/physics.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 2,
+	    "titleEn": "Biology",
+	    "titleId": "Biologi",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/biology.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 3,
+	    "titleEn": "Social Studies",
+	    "titleId": "Ilmu Pengetahuan Sosial",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/ips.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 4,
+	    "titleEn": "Islamic Education",
+	    "titleId": "Pendidikan Agama Islam",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/alazhar.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 5,
+	    "titleEn": "Al-Qur'an",
+	    "titleId": "Al-Qur'an",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/quran.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 6,
+	    "titleEn": "اللغة العربية",
+	    "titleId": "اللغة العربية",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/arabic.png",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 7,
+	    "titleEn": "Civics Education",
+	    "titleId": "PKN",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/ppkn.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 8,
+	    "titleEn": "Informatics",
+	    "titleId": "Informatika",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/laptop.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 9,
+	    "titleEn": "English",
+	    "titleId": "English",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/library.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 10,
+	    "titleEn": "Bahasa Indonesia",
+	    "titleId": "Bahasa Indonesia",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/books.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 11,
+	    "titleEn": "Music",
+	    "titleId": "Seni Musik",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/music.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 12,
+	    "titleEn": "Arts",
+	    "titleId": "Seni Rupa",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/paint.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	},
+	{
+	    "id": 13,
+	    "titleEn": "Sports",
+	    "titleId": "Penjasorkes",
+	    "splash": "insert funny splash text",
+	    "banner": "/assets/images/hero/sports.jpg",
+	    "chapters": [
+		{
+		    "id": 0,
+		    "titleEn": "chapter title",
+		    "titleId": "judul bab",
+		    "lessons": [
+			{
+			    "id": 0,
+			    "type": "lesson",
+			    "titleEn": "lesson title",
+			    "titleId": "judul materi",
+			    "grade": 9,
+			    "status": 0,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.md"
+			},
+			{
+			    "id": 1,
+			    "type": "quiz",
+			    "titleEn": "quiz title",
+			    "titleId": "judul kuis",
+			    "grade": 9,
+			    "authors": [ "John Doe", "Jane Doe" ],
+			    "path": "path/to/file.json"
+			}
+		    ]
+		}
+	    ]
+	}
+    ]
+}

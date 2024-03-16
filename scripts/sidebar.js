@@ -3,7 +3,7 @@ function toggleNav() {
     const sStyle = window.getComputedStyle(sidebar);
 
     if (sStyle.visibility == "hidden") {
-        if (document.body.clientWidth >= 700) {
+        if (document.body.clientWidth >= 1000) {
             document.getElementById("main").style.marginLeft = "360px";
 
             try {
@@ -14,7 +14,7 @@ function toggleNav() {
             }
 
             try {
-                document.getElementById("chip-container").style.marginLeft = "375px";
+                document.getElementById("chip-container").style.marginLeft = "355px";
             } catch {
 
             }
@@ -35,7 +35,7 @@ function toggleNav() {
         }
 
         try {
-            document.getElementById("chip-container").style.marginLeft = "20px";
+            document.getElementById("chip-container").style.marginLeft = "0px";
         } catch {
 
         }

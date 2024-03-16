@@ -1,7 +1,7 @@
 // i am a C# developer
 // trying javascript
 
-window.onload = function() {
+function toc() {
     const tocDiv = document.getElementById("toc");
     const content = document.getElementById("main");
     const headers = content.querySelectorAll('h1, h2, h3, h4, h5, h6');

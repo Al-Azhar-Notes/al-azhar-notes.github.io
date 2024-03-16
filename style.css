@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', serif;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     background-color: var(--white-bg);
     color: var(--black-color-1);
     overflow: auto;
@@ -184,7 +184,6 @@ img {
     z-index: 9999;
     opacity: 1;
     transition: all .2s;
-    backdrop-filter: blur(25px);
 }
 
 #sidebar > div:first-child {
@@ -224,12 +223,9 @@ img {
 }
 
 .sidebar-logo {
-    width: 180px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
 }
 
 .sidebar-sublink {
@@ -440,8 +436,8 @@ h3.banner-text {
 }
 
 #chip-container {
-    margin-left: 375px;
     transition: all .5s;
+    margin-left: 355px;
 }
 
 .chip-container {
@@ -449,6 +445,10 @@ h3.banner-text {
     flex-direction: row;
     gap: 15px;
     transition: all .5s;
+    overflow: scroll;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 .chip {
@@ -466,6 +466,7 @@ h3.banner-text {
     font-size: 0.8em;
     color: #4A4A4A;
     line-height: 24px;
+    white-space: nowrap;
 }
 
 .link-card {
@@ -576,6 +577,49 @@ sup>sup {
     margin-right: 20px;
 }
 
+.button-group-container {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.button-grouped {
+    background-color: var(--white-bg);
+    border: 1px solid var(--white-accent-bg);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+    text-decoration: none;
+    padding-inline: 15px;
+    box-sizing: border-box;
+    color: #1A1A1A;
+}
+
+.button-grouped:active {
+    background-color: var(--white-color-2);
+}
+
+.button-grouped-top {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.button-grouped-bottom {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.button-grouped-all {
+    border-radius: 30px;
+}
+
+.button-char-icon {
+    font-size: 1.5rem;
+}
+
 #img-alazhar {
     background-image: url(/assets/images/hero/alazhar.jpg);
     background-position: center;
@@ -618,16 +662,15 @@ li>a:hover {
     text-decoration: underline;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 1000px) { 
     .flex {
         flex-direction: column;
     }
 
     #main {
         margin-left: 0;
-        padding-left: 0px;
-        padding-right: 0px;
-        padding: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     #banner {
@@ -639,6 +682,7 @@ li>a:hover {
         opacity: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(25px);
     }
 
     .fixed-top-btn-container {
@@ -653,6 +697,18 @@ li>a:hover {
     }
 
     #chip-container {
-        margin-left: 20px;
+	margin-left: 0px;
+    }
+
+    .sidebar-logo {
+	height: 164px;
+	margin-top: 50px;
+    }
+}
+
+@media(max-width: 1200px) {
+    #main {
+	padding-left: 30px;
+	padding-right: 30px;
     }
 }
