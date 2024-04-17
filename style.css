@@ -22,6 +22,19 @@ body {
     background-color: var(--white-bg);
     color: var(--black-color-1);
     overflow: auto;
+    animation: fadein .5s;
+}
+
+@keyframes fadein {
+    0% {
+	opacity: 0;
+    }
+    50% {
+	opacity: 0;
+    }
+    100% {
+	opacity: 1;
+    }
 }
 
 /* width */
@@ -575,6 +588,7 @@ sup>sup {
     gap: 15px; 
     justify-content: space-between; 
     margin-right: 20px;
+    padding-left: 20px;
 }
 
 .button-group-container {
@@ -632,6 +646,10 @@ sup>sup {
     width: 100%;
     z-index: 2;
     background: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#img-dynamic-subject {
+    background-position: center;
 }
 
 #img-main {

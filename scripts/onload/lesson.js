@@ -1,8 +1,10 @@
 // DEPENDENCIES
 // * /scripts/lesson.js
 // 	* /scripts/toc.js
+// * /scripts/global.js
 window.onload = function() {
     loadLesson(getUrlVars()['subject'], getUrlVars()['chapter'], getUrlVars()['id']);
+    updateGlobalElements();
 }
 
 function getUrlVars() {

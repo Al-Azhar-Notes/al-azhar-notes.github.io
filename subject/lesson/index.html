@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link rel="icon" href="/assets/images/master.svg">
     <title>Al Azhar 9th Grade Lesson Notes</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,27 +28,25 @@
 <body>
     <div class="fixed-top-btn-container" id="topbtn">
         <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
-        <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+        <a href="../" class="fixed-top-btn back-btn" id="top-back-btn"><i class="fa-solid fa-chevron-left"></i></a>
     </div>
     <div id="console"></div>
     <div id="sidebar">
         <div>
-            <a href="/index.html">
+            <a href="/">
                 <img src="/assets/images/master.svg" alt="" class="sidebar-logo">
             </a>
-
-            <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
         </div>
 
         <div>
-            <a href="/about/author.html" class="sidebar-link link">About the Author</a>
-            <a href="/about/school.html" class="sidebar-link link">About School</a>
-            <a href="/lessons" class="sidebar-link link">Lessons</a>
+            <a href="/about/author.html" class="sidebar-link link" id="link-author">About the Author</a>
+            <a href="/about/school.html" class="sidebar-link link" id="link-school">About School</a>
+            <a href="/lessons" class="sidebar-link link" id="link-lessons">Lessons</a>
 
 
             <hr class="divider">
             <div id="toc">
-                <h4>Table of Contents</h4>
+                <h4 id="toc-title">Table of Contents</h4>
             </div>
         </div>
     </div>
@@ -64,6 +61,7 @@
     </div>
 
     <div class="chip-container" id="chip-container">
+	<div><a href="javascript:switchLang()" class="button" id="lang-switcher"><i class="fa-solid fa-language"></i> <span id="lang-switcher-text">Read in Indonesia</span></a></div>
         <div class="chip" id="chip-status"><span>0 = ?; 1 = ✅ Verified; 2 = X;</span></div>
         <div class="chip" id="chip-author"><span>Written by Fulan bin Fulan</span></div>
         <div class="chip" id="chip-grade"><span>Grade -2</span></div>
@@ -85,10 +83,18 @@
         </section>
     </div>
 
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/globalElements.js"></script>
+    <script src="/scripts/localStorage.js"></script>
     <script src="/scripts/toc.js"></script>
     <script src="/scripts/lesson.js"></script>
     <script src="/scripts/onload/lesson.js"></script>
     <script src="/scripts/sidebar.js"></script>
+	
+    <script>
+	var btn = document.getElementById("top-back-btn");
+	btn.setAttribute("href", `../?id=${getUrlVars()['subject']}`)
+    </script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 window.onload = function() {
     toc();
     loadSubject(getUrlVars()['id']);
+    updateGlobalElements();
 }
 
 function getUrlVars() {

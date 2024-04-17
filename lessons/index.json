@@ -5,6 +5,7 @@
 	    "titleId": "Matematika",
 	    "splash": "1 + 1 = 3",
 	    "banner": "/assets/images/hero/math.jpg",
+	    "bannerOriginal": "/assets/images/hero/math_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -18,7 +19,7 @@
 			    "titleId": "Pelajaran 1: Pangkat",
 			    "grade": 9,
 			    "status": 1,
-			    "authors": [ "Athaalaa Altaf Hafidz", "Athaalaa Altaf Hafidz" ],
+			    "authors": [ "Athaalaa Altaf Hafidz" ],
 			    "pathEn": "/lessons/matematika/1-exponents/1.md",
 			    "pathId": "/lessons/matematika/1-exponents/1-id.md"
 			},
@@ -42,6 +43,7 @@
 	    "titleId": "Fisika",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/physics.jpg",
+	    "bannerOriginal": "/assets/images/hero/physics_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -77,6 +79,7 @@
 	    "titleId": "Biologi",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/biology.jpg",
+	    "bannerOriginal": "/assets/images/hero/biology_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -112,6 +115,7 @@
 	    "titleId": "Ilmu Pengetahuan Sosial",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/ips.jpg",
+	    "bannerOriginal": "/assets/images/hero/ips_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -147,6 +151,7 @@
 	    "titleId": "Pendidikan Agama Islam",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/alazhar.jpg",
+	    "bannerOriginal": "/assets/images/hero/alazhar_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -182,6 +187,7 @@
 	    "titleId": "Al-Qur'an",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/quran.jpg",
+	    "bannerOriginal": "/assets/images/hero/quran_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -217,6 +223,7 @@
 	    "titleId": "اللغة العربية",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/arabic.png",
+	    "bannerOriginal": "/assets/images/hero/library.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -252,6 +259,7 @@
 	    "titleId": "PKN",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/ppkn.jpg",
+	    "bannerOriginal": "/assets/images/hero/ppkn_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -287,6 +295,7 @@
 	    "titleId": "Informatika",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/laptop.jpg",
+	    "bannerOriginal": "/assets/images/hero/laptop_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -322,6 +331,7 @@
 	    "titleId": "English",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/library.jpg",
+	    "bannerOriginal": "/assets/images/hero/library.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -357,6 +367,7 @@
 	    "titleId": "Bahasa Indonesia",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/books.jpg",
+	    "bannerOriginal": "/assets/images/hero/books_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -392,6 +403,7 @@
 	    "titleId": "Seni Musik",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/music.jpg",
+	    "bannerOriginal": "/assets/images/hero/music_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -427,6 +439,7 @@
 	    "titleId": "Seni Rupa",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/paint.jpg",
+	    "bannerOriginal": "/assets/images/hero/paint_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,
@@ -462,6 +475,7 @@
 	    "titleId": "Penjasorkes",
 	    "splash": "insert funny splash text",
 	    "banner": "/assets/images/hero/sports.jpg",
+	    "bannerOriginal": "/assets/images/hero/sports_original.jpg",
 	    "chapters": [
 		{
 		    "id": 0,

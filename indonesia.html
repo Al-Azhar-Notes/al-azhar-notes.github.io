@@ -23,22 +23,20 @@
     <div id="console"></div>
     <div id="sidebar">
         <div>
-            <a href="/index.html">
+            <a href="/">
                 <img src="/assets/images/master.svg" alt="" class="sidebar-logo">
             </a>
-
-            <h3 id="title" class="align-center">Al Azhar 9th Grade Lesson Notes</h3>
         </div>
 
         <div>
-            <a href="/about/author.html" class="sidebar-link link">About the Author</a>
-            <a href="/about/school.html" class="sidebar-link link">About School</a>
-            <a href="/lessons" class="sidebar-link link">Lessons</a>
+            <a href="/about/author.html" class="sidebar-link link" id="link-author">About the Author</a>
+            <a href="/about/school.html" class="sidebar-link link" id="link-school">About School</a>
+            <a href="/lessons" class="sidebar-link link" id="link-lessons">Lessons</a>
 
 
             <hr class="divider">
             <div id="toc">
-                <h4>Table of Contents</h4>
+                <h4 id="toc-title">Table of Contents</h4>
             </div>
         </div>
     </div>
@@ -47,143 +45,32 @@
         <div class="banner-bg" id="img-alazhar"></div>
         <div class="gradient-bg"></div>
         <div class="banner-text-container">
-            <h1 class="banner-text" id="banner-txt">Al Azhar 9th Grade Lesson Notes</h1>
-            <h3 class="banner-text" id="banner-txt">Sebuah website belajar</h3>
+            <h1 class="banner-text" id="banner-txt">Welcome to OpenLearning Centre!</h1>
+            <h3 class="banner-text" id="banner-txt">A studying website mainly for Al Azhar SMP students.</h3>
         </div>
     </div>
 
     <div class="top-chips-container" id="chip-container">
-        <div><a href="/" class="button"><i class="fa-solid fa-language"></i> Lihat dalam Bahasa Inggris</a></div>
+	<div><a href="javascript:switchLangHref('/')" class="button" id="lang-switcher"><i class="fa-solid fa-language"></i> <span id="lang-switcher-text">Read in Indonesia</span></a></div>
     </div>
 
     <div id="main">
         <section>
-            <h1 id="welcome">Selamat Datang</h1>
-            <p>Selamat datang di website Rangkuman Pelajaran Al Azhar Kelas 9 (yang tidak resmi)! Website ini adalah website catatan pelajaran yang ditulis oleh Altaf. Silakan pilih pelajaran dibawah untuk memulai membaca.</p>
-            <h1 id="github">Berkontribusi dan Sumber Kode</h1>
+            <h1 id="welcome">A Warm Welcome</h1>
+            <p>Welcome to OpenLearning Centre! This is a website meant for middle school students (mainly Al Azhar) to study and / or an extra reference for studying. Choose a subuject below to start reading.</p>
+            <h1 id="github">Contributing and Source Code</h1>
             <p>
-                Jika anda ingin berkontribusi ke proyek ini atau ingin melihat sumber kodennya, semuanya tersedia di GitHub!<br>
-                Jika anda ingin menyarankan sebuah halaman baru, silakan buat sebuah <i>Issue</i> baru di GitHub. <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" class="link">Ini bagaimana cara melakukannya. <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.6em;"></i></a>
+                If you want to contribute to the project or want to view the source code, it's all available at GitHub! <br>
+                If you want to suggest a new page, you can create it yourself using HTML, or create a new issue at GitHub. <a href="https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue" class="link">Here's how to do it. <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.6em;"></i></a>
             </p>
             <p>Link: <a href="https://github.com/Al-Azhar-Notes/al-azhar-notes.github.io" class="link"><i
                         class="fa-brands fa-github"></i>
                     https://github.com/Al-Azhar-Notes/al-azhar-notes.github.io</a>
             </p>
-            <h1 style="display: inline;" id="lessons">Pelajaran</h1> <a href="/lessons/"><span
+            <h1 style="display: inline;" id="lessons">Lessons</h1> <a href="/lessons/"><span
                     style="margin-left: 10px;"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></a>
-            <div class="card-container">
-                <div class="card">
-                    <a href="/lessons/matematika/" class="link-card"></a>
-                    <img src="/assets/images/hero/math.jpg" alt="" class="card-img">
-                    <a href="/lessons/1/">
-                        <h2>Matematika</h2>
-                    </a>
-                    <p>Hidayatullah, S.Pd.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/fisika/" class="link-card"></a>
-                    <img src="/assets/images/hero/physics.jpg" alt="" class="card-img">
-                    <a href="/lessons/2/">
-                        <h2>Fisika</h2>
-                    </a>
-                    <p>Ayu Rezky Yulita, M.Pd.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/biologi/" class="link-card"></a>
-                    <img src="/assets/images/hero/biology.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Biologi</h2>
-                    </a>
-                    <p>Ir. Hj. Wiwit Parminta</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/ips/" class="link-card"></a>
-                    <img src="/assets/images/hero/ips.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>IPS</h2>
-                    </a>
-                    <p>Unaeni Jahroh S.Pd.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/agama/" class="link-card"></a>
-                    <img src="/assets/images/hero/alazhar.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Agama</h2>
-                    </a>
-                    <p>Akrom Hasani, S.Ag.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/quran/" class="link-card"></a>
-                    <img src="/assets/images/hero/quran.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Al-Qur'an</h2>
-                    </a>
-                    <p>Muhammad Fathan S.Ag</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/arab/" class="link-card"></a>
-                    <img src="/assets/images/hero/arabic.png" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Bahasa Arab</h2>
-                    </a>
-                    <p>Mohammad Amar, Lc.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/ppkn/" class="link-card"></a>
-                    <img src="/assets/images/hero/ppkn.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>PPKn</h2>
-                    </a>
-                    <p>Andini Nurlaily Hikmah, S.Pd.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/informatika/" class="link-card"></a>
-                    <img src="/assets/images/hero/laptop.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Informatika</h2>
-                    </a>
-                    <p>Nurbaeti, SE., M.Ak</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/english/" class="link-card"></a>
-                    <img src="https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/GettyImages-577674005_492115_zfpgiw.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>English</h2>
-                    </a>
-                    <p>Sofia Nurbaiti, S.Pd.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/indonesia/" class="link-card"></a>
-                    <img src="/assets/images/hero/books.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Bahasa Indonesia</h2>
-                    </a>
-                    <p>Maman Sulaeman, S.Pd.</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/musik/" class="link-card"></a>
-                    <img src="/assets/images/hero/music.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Seni Musik</h2>
-                    </a>
-                    <p>Dra. Kusnun Indrawati</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/lukis/" class="link-card"></a>
-                    <img src="/assets/images/hero/paint.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Seni Rupa</h2>
-                    </a>
-                    <p>Miftah Izharul Haq, S.Pd</p>
-                </div>
-                <div class="card">
-                    <a href="/lessons/pjok/" class="link-card"></a>
-                    <img src="/assets/images/hero/sports.jpg" alt="" class="card-img">
-                    <a href="/lessons/3/">
-                        <h2>Penjasorkes</h2>
-                    </a>
-                    <p>Supatri, S.Pd</p>
-                </div>
+            <div class="card-container" id="subject-container">
+	    <!-- /scripts/lesson.js - loadSubjects(); -->
             </div>
             <h1 id="contributors">Credits & Contributors</h1>
             <div class="flex">
@@ -268,10 +155,13 @@
         </section>
     </div>
 
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/globalElements.js"></script>
+    <script src="/scripts/localStorage.js"></script>
     <script src="/scripts/toc.js"></script>
-    <script src="/scripts/onload/toc.js"></script>
+    <script src="/scripts/lesson.js"></script>
+    <script src="/scripts/onload/list.js"></script>
     <script src="/scripts/sidebar.js"></script>
 </body>
 
 </html>
-
