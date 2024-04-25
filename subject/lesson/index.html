@@ -2,99 +2,99 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Al Azhar 9th Grade Lesson Notes</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
-    <script>
-	MathJax = {
-	    tex: {
-		inlineMath: [['\\(', '\\)']]
-	    }
-	};
-    </script>
-    <script type="text/javascript" id="MathJax-script" async
-	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/markdown-it@13.0.2/dist/markdown-it.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style.css">
+	<title>Al Azhar 9th Grade Lesson Notes</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
+	<script>
+		MathJax = {
+			tex: {
+				inlineMath: [['\\(', '\\)']]
+			}
+		};
+	</script>
+	<script type="text/javascript" id="MathJax-script" async
+		src="/libraries/mathjax/es5/tex-chtml.js">
+	</script>
+	<script src="/libraries/markdown-it/markdown-it.min.js"></script>
 </head>
 
 <body>
-    <div class="fixed-top-btn-container" id="topbtn">
-        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
-        <a href="../" class="fixed-top-btn back-btn" id="top-back-btn"><i class="fa-solid fa-chevron-left"></i></a>
-    </div>
-    <div id="console"></div>
-    <div id="sidebar">
-        <div>
-            <a href="/">
-                <img src="/assets/images/master.svg" alt="" class="sidebar-logo">
-            </a>
-        </div>
+	<div class="fixed-top-btn-container" id="topbtn">
+		<a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+		<a href="../" class="fixed-top-btn back-btn" id="top-back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+	</div>
+	<div id="console"></div>
+	<div id="sidebar">
+		<div>
+			<a href="/">
+				<img src="/assets/images/master.svg" alt="" class="sidebar-logo">
+			</a>
+		</div>
 
-        <div>
-            <a href="/about/author.html" class="sidebar-link link" id="link-author">About the Author</a>
-            <a href="/about/school.html" class="sidebar-link link" id="link-school">About School</a>
-            <a href="/lessons" class="sidebar-link link" id="link-lessons">Lessons</a>
+		<div>
+			<a href="/about/author.html" class="sidebar-link link" id="link-author">About the Author</a>
+			<a href="/about/school.html" class="sidebar-link link" id="link-school">About School</a>
+			<a href="/lessons" class="sidebar-link link" id="link-lessons">Lessons</a>
 
 
-            <hr class="divider">
-            <div id="toc">
-                <h4 id="toc-title">Table of Contents</h4>
-            </div>
-        </div>
-    </div>
+			<hr class="divider">
+			<div id="toc">
+				<h4 id="toc-title">Table of Contents</h4>
+			</div>
+		</div>
+	</div>
 
-    <div class="banner-container" id="banner">
-        <div class="banner-bg" id="img-supplies"></div>
-        <div class="gradient-bg"></div>
-        <div class="banner-text-container">
-            <h1 class="banner-text" id="title-banner">Lesson Title</h1>
-            <h3 class="banner-text" id="subtitle">Chapter 1</h3>
-        </div>
-    </div>
+	<div class="banner-container" id="banner">
+		<div class="banner-bg" id="img-supplies"></div>
+		<div class="gradient-bg"></div>
+		<div class="banner-text-container">
+			<h1 class="banner-text" id="title-banner">Lesson Title</h1>
+			<h3 class="banner-text" id="subtitle">Chapter 1</h3>
+		</div>
+	</div>
 
-    <div class="chip-container" id="chip-container">
-	<div><a href="javascript:switchLang()" class="button" id="lang-switcher"><i class="fa-solid fa-language"></i> <span id="lang-switcher-text">Read in Indonesia</span></a></div>
-        <div class="chip" id="chip-status"><span>0 = ?; 1 = ✅ Verified; 2 = X;</span></div>
-        <div class="chip" id="chip-author"><span>Written by Fulan bin Fulan</span></div>
-        <div class="chip" id="chip-grade"><span>Grade -2</span></div>
-    </div>
+	<div class="chip-container" id="chip-container">
+		<div><a href="javascript:switchLang()" class="button" id="lang-switcher"><i class="fa-solid fa-language"></i> <span id="lang-switcher-text">Read in Indonesia</span></a></div>
+		<div class="chip" id="chip-status"><span>0 = ?; 1 = ✅ Verified; 2 = X;</span></div>
+		<div class="chip" id="chip-author"><span>Written by Fulan bin Fulan</span></div>
+		<div class="chip" id="chip-grade"><span>Grade -2</span></div>
+	</div>
 
-    <div id="main" style="margin-top: -20px;">
-        <section id="container">
-            <h1 id="parts-of-atom">Title</h1>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ipsum, scelerisque vel molestie et, dictum vel urna. Vestibulum id scelerisque sapien. Sed tincidunt ultricies congue. Quisque aliquam lectus nulla, ut auctor dolor aliquam sit amet. Vestibulum interdum varius commodo. Donec finibus elit id lectus commodo, nec convallis enim faucibus. Vivamus nunc nibh, blandit in arcu in, facilisis tincidunt nisl. Sed sollicitudin vulputate fringilla. Vivamus mollis ipsum sed porta varius. Duis mollis condimentum lectus, ac pellentesque sapien volutpat sit amet. Curabitur sagittis est ac eros accumsan, vitae consectetur orci auctor.</p>
+	<div id="main" style="margin-top: -20px;">
+		<section id="container">
+			<h1 id="parts-of-atom">Title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lorem ipsum, scelerisque vel molestie et, dictum vel urna. Vestibulum id scelerisque sapien. Sed tincidunt ultricies congue. Quisque aliquam lectus nulla, ut auctor dolor aliquam sit amet. Vestibulum interdum varius commodo. Donec finibus elit id lectus commodo, nec convallis enim faucibus. Vivamus nunc nibh, blandit in arcu in, facilisis tincidunt nisl. Sed sollicitudin vulputate fringilla. Vivamus mollis ipsum sed porta varius. Duis mollis condimentum lectus, ac pellentesque sapien volutpat sit amet. Curabitur sagittis est ac eros accumsan, vitae consectetur orci auctor.</p>
 
-	    <p>Vivamus \(c^2 = \sqrt{a^2 - b^2}\) scelerisque magna sit amet ante vulputate aliquet. Praesent pulvinar, libero eget egestas pretium, ligula dui tincidunt odio, vitae ultrices mi arcu eu purus. Nunc nec laoreet mi, sed sodales est. Nam porta sem eget sem condimentum vulputate. Fusce rhoncus aliquet mauris, a dapibus turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tristique interdum mauris eget convallis. In convallis ultrices justo, ut efficitur sapien congue malesuada. Donec dignissim ante at feugiat suscipit. </p>
+			<p>Vivamus \(c^2 = \sqrt{a^2 - b^2}\) scelerisque magna sit amet ante vulputate aliquet. Praesent pulvinar, libero eget egestas pretium, ligula dui tincidunt odio, vitae ultrices mi arcu eu purus. Nunc nec laoreet mi, sed sodales est. Nam porta sem eget sem condimentum vulputate. Fusce rhoncus aliquet mauris, a dapibus turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tristique interdum mauris eget convallis. In convallis ultrices justo, ut efficitur sapien congue malesuada. Donec dignissim ante at feugiat suscipit. </p>
 
-	    <p>\( \dfrac{1}{2} = \dfrac{2}{4} \)</p>
+			<p>\( \dfrac{1}{2} = \dfrac{2}{4} \)</p>
 
-            <div class="flex flex-center">
-                <img src="/assets/images/atoms/parts.svg" alt="">
-            </div>
-            <p class="subtitle">artist's representation of an atom. Bohr's Model. Colors may be labelled different.</p>
-        </section>
-    </div>
+			<div class="flex flex-center">
+				<img src="/assets/images/atoms/parts.svg" alt="">
+			</div>
+			<p class="subtitle">artist's representation of an atom. Bohr's Model. Colors may be labelled different.</p>
+		</section>
+	</div>
 
-    <script src="/scripts/global.js"></script>
-    <script src="/scripts/globalElements.js"></script>
-    <script src="/scripts/localStorage.js"></script>
-    <script src="/scripts/toc.js"></script>
-    <script src="/scripts/lesson.js"></script>
-    <script src="/scripts/onload/lesson.js"></script>
-    <script src="/scripts/sidebar.js"></script>
-	
-    <script>
-	var btn = document.getElementById("top-back-btn");
-	btn.setAttribute("href", `../?id=${getUrlVars()['subject']}`)
-    </script>
+	<script src="/scripts/global.js"></script>
+	<script src="/scripts/globalElements.js"></script>
+	<script src="/scripts/localStorage.js"></script>
+	<script src="/scripts/toc.js"></script>
+	<script src="/scripts/lesson.js"></script>
+	<script src="/scripts/onload/lesson.js"></script>
+	<script src="/scripts/sidebar.js"></script>
+		
+	<script>
+		var btn = document.getElementById("top-back-btn");
+		btn.setAttribute("href", `../?id=${getUrlVars()['subject']}`)
+	</script>
 </body>
 
 </html>

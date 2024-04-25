@@ -25,6 +25,17 @@
 			},
 			{
 			    "id": 1,
+			    "type": "lesson",
+			    "titleEn": "Lesson 1: Exponent",
+			    "titleId": "Pelajaran 1: Pangkat",
+			    "grade": 9,
+			    "status": 1,
+			    "authors": [ "Athaalaa Altaf Hafidz" ],
+			    "pathEn": "/lessons/matematika/1-exponents/1.md",
+			    "pathId": "/lessons/matematika/1-exponents/1-id.md"
+			},
+			{
+			    "id": 999,
 			    "type": "quiz",
 			    "titleEn": "quiz title",
 			    "titleId": "judul kuis",

@@ -8,6 +8,14 @@ function langEnglish() {
 	window.location.reload();
 }
 
+function setSidebarStorage(open) {
+	if (open) {
+		localStorage.setItem("sidebar", "open");
+	} else {
+		localStorage.setItem("sidebar", "closed")
+	}
+}
+
 function switchLang() {
 	switchLangStorage();
 	window.location.reload();

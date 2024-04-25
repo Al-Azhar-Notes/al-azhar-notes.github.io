@@ -138,7 +138,11 @@ function loadLesson(subject, chapter, lesson) {
 					const md = markdownit({
 						"html": true
 					});
-					container.innerHTML = md.render(data);
+					data = data.replaceAll("!---(", `\n<details>\n`);
+					data = data.replaceAll(")---!", `\n</details>\n`);
+					data = data.replaceAll("#--(", `\n<summary>\n`);
+					data = data.replaceAll(")--#", `\n</summary>\n`);
+					container.innerHTML += md.render(data);
 				}).then(() => {
 					MathJax.typeset();
 				}).then(() => {

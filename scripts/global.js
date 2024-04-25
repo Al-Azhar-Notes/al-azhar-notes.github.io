@@ -19,3 +19,14 @@ function isDarkMode() {
 		return false
 	}
 }
+
+// RETURN VALUE
+//	TYPE		: bool
+//	DESCRIPTION	: true = sidebar open (fallback); false = sidebar close;
+function isSidebarOpen() {
+	if (localStorage.getItem("sidebar") == "closed") {
+		return false
+	} else {
+		return true
+	}
+}
