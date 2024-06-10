@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="380.42001mm"
+   width="332.42001mm"
    height="170.17mm"
-   viewBox="0 0 380.41997 170.17001"
+   viewBox="0 0 332.41997 170.17001"
    version="1.1"
    id="svg1"
    sodipodi:docname="learningcentre-full.svg"
@@ -28,8 +28,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="0.28998744"
-     inkscape:cx="1246.6057"
-     inkscape:cy="594.85336"
+     inkscape:cx="1244.8815"
+     inkscape:cy="594.85335"
      inkscape:window-width="1920"
      inkscape:window-height="1080"
      inkscape:window-x="0"
@@ -272,18 +272,15 @@
        xml:space="preserve"
        style="font-weight:600;font-size:31.75px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Semi-Bold';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#16274b;stroke-width:3.81799;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
        x="153.67108"
-       y="36.748005"
+       y="51.543983"
        id="text23"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.75px;font-family:Montserrat;-inkscape-font-specification:Montserrat;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.818"
-         x="153.67108"
-         y="36.748005"
-         id="tspan24">OpenLearning</tspan><tspan
          sodipodi:role="line"
          style="font-weight:bold;font-size:31.75px;text-align:start;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.818"
          x="153.67108"
-         y="76.435501"
-         id="tspan25">Centre</tspan></text>
+         y="51.543983"
+         id="tspan25">learnsmp<tspan
+   style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Montserrat;-inkscape-font-specification:'Montserrat Light'"
+   id="tspan1">.id</tspan></tspan></text>
     <g
        id="g3"
        transform="translate(-17.673104,11.756241)">
