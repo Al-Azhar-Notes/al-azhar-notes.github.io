@@ -14,14 +14,22 @@ function openSidebar(useAnim) {
 		document.getElementById("main").style.removeProperty("transition");
 		document.getElementById("banner").style.removeProperty("transition");
 		document.getElementById("topbtn").style.removeProperty("transition");
-		document.getElementById("chip-container").style.removeProperty("transition");
 		document.getElementById("sidebar").style.removeProperty("transition");
+		try {
+			document.getElementById("chip-container").style.removeProperty("transition");
+		} catch {
+
+		}
 	} else {
 		document.getElementById("main").style.transition = "none";
 		document.getElementById("banner").style.transition = "none";
 		document.getElementById("topbtn").style.transition = "none";
-		document.getElementById("chip-container").style.transition = "none";
 		document.getElementById("sidebar").style.transition = "none";
+		try {
+			document.getElementById("chip-container").style.transition = "none";
+		} catch {
+
+		}
 	}
 
 	if (document.body.clientWidth >= 1000) {
@@ -52,14 +60,22 @@ function closeSidebar(useAnim) {
 		document.getElementById("main").style.removeProperty("transition");
 		document.getElementById("banner").style.removeProperty("transition");
 		document.getElementById("topbtn").style.removeProperty("transition");
-		document.getElementById("chip-container").style.removeProperty("transition");
 		document.getElementById("sidebar").style.removeProperty("transition");
+		try {
+			document.getElementById("chip-container").style.removeProperty("transition");
+		} catch {
+
+		}
 	} else {
 		document.getElementById("main").style.transition = "none";
 		document.getElementById("banner").style.transition = "none";
 		document.getElementById("topbtn").style.transition = "none";
-		document.getElementById("chip-container").style.transition = "none";
 		document.getElementById("sidebar").style.transition = "none";
+		try {
+			document.getElementById("chip-container").style.transition = "none";
+		} catch {
+
+		}
 	}
 	
 	document.getElementById("main").style.marginLeft = "0";

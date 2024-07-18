@@ -3,7 +3,6 @@
 // 	* /scripts/toc.js
 // * /scripts/global.js
 window.onload = function() {
-	loadLesson(getUrlVars()['subject'], getUrlVars()['chapter'], getUrlVars()['id']);
 	updateGlobalElements();
 	var btn = document.getElementById("top-back-btn");
 	btn.setAttribute("href", `../?id=${getUrlVars()['subject']}`)

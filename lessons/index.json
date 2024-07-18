@@ -26,22 +26,22 @@
 			{
 			    "id": 1,
 			    "type": "lesson",
-			    "titleEn": "Lesson 1: Exponent",
-			    "titleId": "Pelajaran 1: Pangkat",
+			    "titleEn": "Lesson 2: Roots",
+			    "titleId": "Pelajaran 2: Akar",
 			    "grade": 9,
 			    "status": 1,
 			    "authors": [ "Athaalaa Altaf Hafidz" ],
-			    "pathEn": "/lessons/matematika/1-exponents/1.md",
-			    "pathId": "/lessons/matematika/1-exponents/1-id.md"
+			    "pathEn": "/lessons/matematika/1-exponents/2.md",
+			    "pathId": "/lessons/matematika/1-exponents/2-id.md"
 			},
 			{
-			    "id": 999,
+			    "id": 3,
 			    "type": "quiz",
 			    "titleEn": "quiz title",
 			    "titleId": "judul kuis",
 			    "grade": 9,
 			    "authors": [ "John Doe", "Jane Doe" ],
-			    "pathEn": "path/to/file.json",
+			    "pathEn": "/lessons/matematika/1-exponents/3.json",
 			    "pathId": "path/to/file.json"
 			}
 		    ]

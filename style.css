@@ -6,10 +6,12 @@
 	--black-color-1: rgb(0, 0, 0);
 	--black-color-2: rgb(151, 151, 151);
 	--black-color-3: rgb(92, 92, 92);
+	--text-color-black: rgb(60, 60, 60);
 	--black-bg: rgb(0, 0, 0);
 	--white-color-1: rgb(255, 255, 255);
 	--white-color-2: rgb(209, 209, 209);
 	--white-color-3: rgb(148, 148, 148);
+	--color-accent: #278d9a;
 }
 
 html,
@@ -18,9 +20,10 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Roboto', serif;
-	font-size: 1.05rem;
+	font-size: 1.025rem;
+	line-height: 1.6rem;
 	background-color: var(--white-bg);
-	color: var(--black-color-1);
+	color: var(--text-color-black);
 	overflow: auto;
 	animation: fadein .5s;
 }
@@ -63,16 +66,19 @@ body {
 }
 
 h1 {
+	color: var(--black-color-1);
 	font-size: 2rem;
 	font-weight: 400;
 }
 
 h2 {
+	color: var(--black-color-1);
 	font-size: 1.5rem;
 	font-weight: 300;
 }
 
 h3 {
+	color: var(--black-color-1);
 	font-size: 1.2rem;
 	font-weight: 500;
 }
@@ -126,6 +132,15 @@ details {
 
 summary {
 	margin-bottom: 1rem;
+	cursor: pointer;
+}
+
+summary::before {
+	color: green;
+}
+
+summary:hover {
+	text-decoration: underline;
 }
 
 summary > * {
@@ -231,12 +246,12 @@ img {
 }
 
 #toc {
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .sidebar-link {
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 	background-color: #00000000 !important;
 }
 
@@ -327,6 +342,10 @@ img {
 	align-items: center;
 }
 
+.row {
+	flex-direction: row !important;
+}
+
 .column {
 	flex-direction: column;
 }
@@ -346,6 +365,19 @@ img {
 
 .flex-element {
 	margin: 30px;
+}
+
+.quiz-bullet {
+	font-size: 0.9rem !important;
+	line-height: 0.9rem !important;
+}
+
+.b-correct {
+	color: limegreen;
+}
+
+.b-incorrect {
+	color: red;
 }
 
 .banner-container {
@@ -396,6 +428,16 @@ img {
 h3.banner-text {
 	color: var(--white-color-2);
 	font-weight: 300;
+}
+
+.container {
+	box-sizing: border-box;
+	padding: 20px;
+	height: 100%;
+	border-radius: 20px;
+	border: 1px solid var(--white-accent-bg);
+	background-color: var(--white-bg);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
 }
 
 .card-container {
@@ -592,8 +634,46 @@ sup>sup {
 	text-decoration: none;
 }
 
+.primary {
+	background-color: var(--color-accent);
+	color: var(--white-color-1);
+}
+
+.primary:hover {
+	background-color: var(--white-color-2) !important;
+	color: var(--black-color-3) !important;
+}
+
+.primary:focus {
+	background-color: var(--color-accent) !important;
+	color: var(--white-color-2) !important;
+}
+
+.primary:active {
+	background-color: var(--black-bg) !important;
+	color: var(--white-color-1) !important;
+}
+
+.left-rounded {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.right-rounded {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
 .button:focus {
 	background-color: var(--white-color-2);
+}
+
+.button:active {
+	background-color: var(--white-color-3);
 }
 
 .top-chips-container {
@@ -606,7 +686,7 @@ sup>sup {
 
 .button-group-container {
 	display: flex;
-	gap: 10px;
+	gap: 5px;
 	flex-direction: column;
 }
 
@@ -617,12 +697,19 @@ sup>sup {
 	display: flex;
 	align-items: center;
 	gap: 10px;
-	height: 60px;
+	height: 55px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
 	text-decoration: none;
 	padding-inline: 15px;
 	box-sizing: border-box;
-	color: #1A1A1A;
+	color: var(--text-color-black);
+	font-size: 1.025rem;
+	transition: color .2s;
+}
+
+button.button-grouped:hover {
+	color: var(--black-color-2);
+	outline: 2px solid var(--black-color-3);
 }
 
 .button-grouped:active {
@@ -630,13 +717,13 @@ sup>sup {
 }
 
 .button-grouped-top {
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 
 .button-grouped-bottom {
-	border-bottom-left-radius: 30px;
-	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
 
 .button-grouped-all {
@@ -644,7 +731,45 @@ sup>sup {
 }
 
 .button-char-icon {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
+	color: var(--black-color-1);
+}
+
+.selected {
+	background-color: var(--color-accent);
+}
+
+.selected > span {
+	color: var(--white-color-1) !important;
+}
+
+.question-window {
+	position: absolute;
+	top: 52px;
+	right: 0;
+	height: min-content;
+}
+
+.check {
+	color: white;
+	background-color: green;
+	padding: 30px;
+	border-radius: 15px;
+}
+
+.x {
+	color: white;
+	background-color: red;
+	padding: 30px;
+	border-radius: 15px;
+}
+
+#correct {
+	display: none;
+}
+
+#incorrect {
+	display: none;
 }
 
 #img-alazhar {

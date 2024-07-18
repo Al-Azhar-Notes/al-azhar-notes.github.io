@@ -1,0 +1,24 @@
+{
+	"randomised": false,
+	"questionCountForRandomisation": 0,
+	"questions": [
+		{
+			"question": "Is simpliCity a bad game?",
+			"attachment": "",
+			"answers": [
+				{
+					"answer": "Yes",
+					"correct": true
+				},
+				{
+					"answer": "Maybe",
+					"correct": false
+				},
+				{
+					"answer":"No",
+					"correct": false
+				}
+			]
+		}
+	]
+}

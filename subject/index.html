@@ -1,82 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Al Azhar 9th Grade Lesson Notes</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">     
-    <script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style.css">
+	<title>Al Azhar 9th Grade Lesson Notes</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">	 
+	<script src="https://kit.fontawesome.com/d279a1f519.js" crossorigin="anonymous"></script>
 </head>
 <body onload="loadSubject(0);">
-    <div class="fixed-top-btn-container" id="topbtn">
-        <a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
-        <a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
-    </div>
-    <div id="console"></div>
-    <div id="sidebar">
-        <div>
-            <a href="/">
-                <img src="/assets/images/master.svg" alt="" class="sidebar-logo">
-            </a>
-        </div>
+	<div class="fixed-top-btn-container" id="topbtn">
+		<a class="fixed-top-btn menu-btn" onclick="toggleNav()" href="javascript:void(0)"><i class="fa-solid fa-bars"></i></a>
+		<a href="../" class="fixed-top-btn back-btn"><i class="fa-solid fa-chevron-left"></i></a>
+	</div>
+	<div id="console"></div>
+	<div id="sidebar">
+		<div>
+			<a href="/">
+				<img src="/assets/images/master.svg" alt="" class="sidebar-logo">
+			</a>
+		</div>
 
-        <div>
-            <a href="/about/author.html" class="sidebar-link link" id="link-author">About the Author</a>
-            <a href="/about/school.html" class="sidebar-link link" id="link-school">About School</a>
-            <a href="/lessons" class="sidebar-link link" id="link-lessons">Lessons</a>
+		<div>
+			<a href="/about/author.html" class="sidebar-link link" id="link-author">About the Author</a>
+			<a href="/about/school.html" class="sidebar-link link" id="link-school">About School</a>
+			<a href="/lessons" class="sidebar-link link" id="link-lessons">Lessons</a>
 
 
-            <hr class="divider">
-            <div id="toc">
-                <h4 id="toc-title">Table of Contents</h4>
-            </div>
-        </div>
-    </div>
+			<hr class="divider">
+			<div id="toc">
+				<h3 id="toc-title">Table of Contents</h3>
+			</div>
+		</div>
+	</div>
 
-    <div class="banner-container" id="banner">
-        <div class="banner-bg" id="img-dynamic-subject"></div>
-        <div class="gradient-bg"></div>
-        <div class="banner-text-container">
-            <h1 class="banner-text" id="title-banner">Subject Title</h1>
-            <h3 class="banner-text" id="subtitle">funny splash text</h3>
-        </div>
-    </div>
+	<div class="banner-container" id="banner">
+		<div class="banner-bg" id="img-dynamic-subject"></div>
+		<div class="gradient-bg"></div>
+		<div class="banner-text-container">
+			<h1 class="banner-text" id="title-banner">Subject Title</h1>
+			<h3 class="banner-text" id="subtitle">funny splash text</h3>
+		</div>
+	</div>
 
-    <div class="top-chips-container" id="chip-container">
-	<div><a href="javascript:switchLang()" class="button" id="lang-switcher"><i class="fa-solid fa-language"></i> <span id="lang-switcher-text">Read in Indonesia</span></a></div>
-    </div>
-    
-    <div id="main">
-        <section id="container">   
-            <h1 id="bab1">Chapter 1 - Chapter Title</h1>
-	    <div class="button-group-container">
-	        <a class="button-grouped button-grouped-top" href="">
-		    <span class="button-char-icon">📚</span>
-		    <span>Lesson 1: Lesson Title</span>
-		</a>
-	        <a class="button-grouped" href="">
-		    <span class="button-char-icon"></span>
-		    <span></span>
-		</a>
-	        <a class="button-grouped button-grouped-bottom" href="">
-		    <span class="button-char-icon"></span>
-		    <span></span>
-		</a>
-	    </div>
-        </section>
-    </div>
-    
-    <script src="/scripts/global.js"></script>
-    <script src="/scripts/globalElements.js"></script>
-    <script src="/scripts/localStorage.js"></script>
-    <script src="/scripts/toc.js"></script>
-    <script src="/scripts/lesson.js"></script>
-    <script src="/scripts/onload/subject.js"></script>
-    <script src="/scripts/sidebar.js"></script>
+	<div class="top-chips-container" id="chip-container">
+		<div><a href="javascript:switchLang()" class="button" id="lang-switcher"><i class="fa-solid fa-language"></i> <span id="lang-switcher-text">Read in Indonesia</span></a></div>
+	</div>
+	
+	<div id="main">
+		<section id="container">   
+			<h1 id="bab1">Chapter 1 - Chapter Title</h1>
+			<div class="button-group-container">
+				<a class="button-grouped button-grouped-top" href="">
+					<span class="button-char-icon">📚</span>
+					<span>Lesson 1: Lesson Title</span>
+				</a>
+				<a class="button-grouped" href="">
+					<span class="button-char-icon"></span>
+					<span></span>
+				</a>
+				<a class="button-grouped button-grouped-bottom" href="">
+					<span class="button-char-icon"></span>
+					<span></span>
+				</a>
+			</div>
+		</section>
+	</div>
+	
+	<script src="/scripts/global.js"></script>
+	<script src="/scripts/globalElements.js"></script>
+	<script src="/scripts/localStorage.js"></script>
+	<script src="/scripts/toc.js"></script>
+	<script src="/scripts/lesson.js"></script>
+	<script src="/scripts/onload/subject.js"></script>
+	<script src="/scripts/sidebar.js"></script>
 </body>
 </html>
